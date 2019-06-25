@@ -20,7 +20,7 @@ void jack_bauer(void)
 			{
 				for (min_ones = '0' ; min_ones <= '9' ; min_ones++)
 				{
-					if (hour_tens <= '2' && hour_ones <= '3')
+					if ((hour_tens <= '2' && hour_ones <= '3') || (hour_tens < '2'))
 					{
 					_putchar(hour_tens);
 					_putchar(hour_ones);
