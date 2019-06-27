@@ -16,11 +16,11 @@ for (loop = 0 ; loop < size ; loop++)
 		{
 			_putchar('#');
 		}
-		else
-		{
-			_putchar('\n');
-		}
 	}
+	_putchar('\n');
+}
+if (size <= 0)
+{
 	_putchar('\n');
 }
 }
