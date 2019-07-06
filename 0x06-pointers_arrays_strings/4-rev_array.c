@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- *
- *
- *
+ * reverse_array - tested function
+ *@a: string
+ *@n: number of elements
  */
 void reverse_array(int *a, int n)
 {
