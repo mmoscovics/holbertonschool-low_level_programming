@@ -13,7 +13,7 @@ char *_strpbrk(char *s, char *accept)
 	pos2 = 0;
 	while (*s != '\0')
 	{
-		while(accept[pos2] != '\0')
+		while (accept[pos2] != '\0')
 		{
 			if (*s == accept[pos2])
 			{
