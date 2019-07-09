@@ -21,4 +21,9 @@ char *_strchr(char *s, char c)
 	}
 	if (s[i] != c)
 		return ('\0');
+	else
+	{
+		pos = &s[i];
+		return (pos);
+	}
 }
