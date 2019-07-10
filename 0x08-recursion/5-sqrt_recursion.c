@@ -25,6 +25,8 @@ int _sqhelp(int count, int n)
 {
 	if (count == 1)
 		return (-1);
+	if (count * count == n && n % count != 1)
+		return (-1);
 	if (count * count == n && n % count == 0)
 		return (count);
 	return (_sqhelp(count - 1, n));
