@@ -11,9 +11,7 @@ int _sqrt_recursion(int n)
 {
 	if (n <= 0)
 		return (-1);
-	if (n == 1)
-		return (n);
-	return (_sqhelp(n - 1, n));
+	return (_sqhelp(n, n));
 }
 /**
  * _sqhelp - helper function
@@ -23,9 +21,9 @@ int _sqrt_recursion(int n)
  */
 int _sqhelp(int count, int n)
 {
-	if (count == 1)
+	if (count == 0)
 		return (-1);
-	if (count * count == n && n % count == 0)
+	if (count * count == n)
 		return (count);
 	return (_sqhelp(count - 1, n));
 }
