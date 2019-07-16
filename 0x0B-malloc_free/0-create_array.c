@@ -10,13 +10,17 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	char *d;
+	char *point;
 	unsigned int count;
 
 	if (size == 0)
 		return (NULL);
-	d = malloc(sizeof(*d) * size);
-	for (count = 0; count <= size; count++)
-		d[count] = c;
-	return (d);
+	point = malloc(sizeof(*point) * size);
+	if (point)
+	{
+		for (count = 0; count <= size; count++)
+			point[count] = c;
+		return (point);
+	}
+	return (NULL);
 }
