@@ -11,15 +11,17 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int count, length;
-	char *point1, *point2;
+	char *point;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-
 	length = nmemb * size;
 
-	if ((point1 = point2 = malloc(length)) != NULL)
-	    for (count = 0; count < length; count++)
-		    *point1++ = 0;
-	return (point2);
+	point = malloc(length);
+	if (point)
+	{
+		for (count = 0; count < length; count++)
+			*point++ = 0;
+	}
+	return (point);
 }
