@@ -11,10 +11,10 @@
 void *malloc_checked(unsigned int b)
 {
 
-	int *point;
+	void *point;
 
 	point = malloc(b);
-	if (!point)
-		exit(98);
-	return (point);
+	if (point)
+		return (point);
+	exit(98);
 }
