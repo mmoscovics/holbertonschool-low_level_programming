@@ -3,10 +3,8 @@
 #include <stdlib.h>
 
 /**
- *
- *
- *
- *
+ * print_dog - function to print dog info
+ *@d: pointer to structure
  */
 void print_dog(struct dog *d)
 {
