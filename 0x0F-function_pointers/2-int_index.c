@@ -4,7 +4,7 @@
 
 /**
  * int_index - tested function
- *@array:
+ *@array: array of elements
  *@size: number of elements in array
  *@cmp: pointer to function to compare values
  * Return: index of first element when cmp function doesnt return 0, or -1
