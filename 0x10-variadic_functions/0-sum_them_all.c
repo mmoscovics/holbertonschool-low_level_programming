@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- *
- *
- *
+ * sum_them_all - tested function, adds all arguments together
+ *@n: number of arguments
+ * Return: sum of args
  */
 
 int sum_them_all(const unsigned int n, ...)
@@ -16,9 +16,9 @@ int sum_them_all(const unsigned int n, ...)
 
 	if (n == 0)
 		return (0);
-	va_start (argpassed, n);
+	va_start(argpassed, n);
 	for (iter = 0; iter < n; iter++)
-		sum += va_arg (argpassed, int);
-	va_end (argpassed);
+		sum += va_arg(argpassed, int);
+	va_end(argpassed);
 	return (sum);
 }
