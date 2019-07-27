@@ -10,13 +10,13 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	int iter = 0;
+	unsigned int iter = 0;
 	char *word;
 
 	va_start(args, format);
-	while (format[iter] != '\0')
+	while (format && format[iter] != '\0')
 	{
-		if (iter > 0 && (format != NULL) && (format[iter] == 'c'
+		if (iter != 0 && (format[iter] == 'c'
 				 || format[iter] == 'i'
 				 || format[iter] == 'f'
 				 || format[iter] == 's'))
