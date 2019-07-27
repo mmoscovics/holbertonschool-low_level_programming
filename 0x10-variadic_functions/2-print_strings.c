@@ -21,7 +21,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (place == NULL)
 			printf("%p", place);
 		printf("%s", place);
-		va_end(argpass);
 		if (iter < n - 1)
 		{
 			if (separator)
@@ -29,4 +28,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 	}
 	printf("\n");
+	va_end(argpass);
 }
