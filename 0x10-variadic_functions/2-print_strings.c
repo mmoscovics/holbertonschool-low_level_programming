@@ -21,7 +21,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (place == NULL)
 			printf("%p", place);
 		printf("%s", place);
-		if (iter < n - 1)
+		if (iter < (n - 1))
 		{
 			if (separator)
 				printf("%s", separator);
