@@ -20,7 +20,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		place = va_arg(argpass, char *);
 		if (place == NULL)
 			printf("%p", place);
-		printf("%s", place);
+		else
+			printf("%s", place);
 		if (iter < (n - 1))
 		{
 			if (separator)
