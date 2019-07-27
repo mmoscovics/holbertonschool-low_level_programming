@@ -12,7 +12,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list argpass;
 	unsigned int iter;
-        char *place;
+	char *place;
 
 	va_start(argpass, n);
 	for (iter = 0; iter < n; iter++)
