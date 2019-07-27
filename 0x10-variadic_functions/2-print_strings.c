@@ -24,9 +24,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		va_end(argpass);
 		if (iter < n - 1)
 		{
-			if (separator == NULL)
-				break;
-			printf("%s", separator);
+			if (separator)
+				printf("%s", separator);
 		}
 	}
 	printf("\n");
