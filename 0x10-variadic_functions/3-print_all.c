@@ -10,16 +10,13 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	unsigned int iter = 0;
+	unsigned int nonfmt, iter = 0;
 	char *word;
 
 	va_start(args, format);
 	while (format && format[iter] != '\0')
 	{
-		if (iter != 0 && (format[iter] == 'c'
-				 || format[iter] == 'i'
-				 || format[iter] == 'f'
-				 || format[iter] == 's'))
+		if (iter != 0 && !nonfmt)
 			printf(", ");
 		switch (format[iter])
 		{
@@ -41,7 +38,12 @@ void print_all(const char * const format, ...)
 			}
 			printf("%s", word);
 			break;
+		default:
+			nonfmt = 1;
+			iter++;
+			continue;
 		}
+		nonfmt = 0;
 		iter++;
 	}
 	printf("\n");
