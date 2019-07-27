@@ -19,7 +19,8 @@ void print_all(const char * const format, ...)
 		if (iter > 0 && (format[iter] == 'c'
 		    || format[iter] == 'i'
 		    || format[iter] == 'f'
-		    || format[iter] == 's'))
+		    || format[iter] == 's')
+		    && format)
 			printf(", ");
 		switch (format[iter])
 		{
