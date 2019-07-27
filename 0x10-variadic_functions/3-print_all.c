@@ -35,7 +35,10 @@ void print_all(const char * const format, ...)
 		case 's':
 			word = va_arg(args, char *);
 			if (word == NULL)
-				printf("nil");
+			{
+				printf("(nil)");
+				break;
+			}
 			printf("%s", word);
 			break;
 		}
