@@ -22,9 +22,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		va_end(argpassed);
 		if (iter < (n - 1))
 		{
-			if (separator == NULL)
-				break;
-			printf("%s", separator);
+			if (separator != NULL)
+				printf("%s", separator);
 		}
 	}
 	printf("\n");
