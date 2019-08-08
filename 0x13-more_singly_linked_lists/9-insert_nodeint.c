@@ -1,9 +1,8 @@
 #include "lists.h"
 
-listint_t *addnode(listint_t **head, int n);
-
 /**
- * insert_node_at_index - tested function, insert a new node at given position
+ * insert_nodeint_at_index - tested function, insert a new node
+ * at given position
  *@head: pointer to beginning of list
  *@idx: index where new node should be added
  *@n: data passed for new node
