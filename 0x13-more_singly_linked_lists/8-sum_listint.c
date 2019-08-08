@@ -9,7 +9,7 @@ int sum_listint(listint_t *head)
 {
 	int sum;
 
-	if (head->n == NULL)
+	if (head == NULL)
 		return (0);
 	while (head)
 	{
