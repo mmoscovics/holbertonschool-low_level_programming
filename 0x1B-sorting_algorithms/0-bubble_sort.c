@@ -7,7 +7,6 @@
  *
  * Return: The sorted list
  */
-
 void bubble_sort(int *array, size_t size)
 {
 	int swap, head, tail;
@@ -49,7 +48,6 @@ void bubble_sort(int *array, size_t size)
  *
  * Return: 1 if sorted, otherwise 0
  */
-
 int is_sorted(int *array, size_t size)
 {
 	int loop = 0;
