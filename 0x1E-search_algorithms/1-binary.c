@@ -34,9 +34,10 @@ size_t binary_searcher(int *array, size_t l, size_t r, int value)
 		print_array(array, l, r);
 		if (array[mid] == value)
 			return (mid);
-		if (array[mid] > value)
+		else if (array[mid] > value)
 			return (binary_searcher(array, l, mid - 1, value));
-		return (binary_searcher(array, mid + 1, r, value));
+		else
+			return (binary_searcher(array, mid + 1, r, value));
 	}
 	return (-1);
 }
