@@ -53,7 +53,7 @@ void print_array(int *array, size_t l, size_t r)
 {
 	unsigned int i;
 
-	printf("Searching in array:");
+	printf("Searching in array: ");
 	for (i = l; i <= r; i++)
 	{
 		if (i != l)
