@@ -10,12 +10,9 @@
 
 int binary_search(int *array, size_t size, int value)
 {
-	unsigned int i;
-
-	if (array == NULL)
-		return (-1);
-	i = binary_searcher(array, 0, size - 1, value);
-	return (i);
+	if (array != NULL)
+		return (binary_searcher(array, 0, size - 1, value));
+	return (-1);
 }
 
 /**
@@ -31,10 +28,10 @@ size_t binary_searcher(int *array, size_t l, size_t r, int value)
 {
 	unsigned int mid;
 
-	print_array(array, l, r);
 	if (r >= l)
 	{
 		mid = l + (r - l) / 2;
+		print_array(array, l, r);
 		if (array[mid] == value)
 			return (mid);
 		if (array[mid] > value)
